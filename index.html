@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Countdown to my personal goals">
+  <meta name="keywords" content="ashvin, motye, ashvin motye, web developer mauritius, software developer mauritius, countdown">
+
+  <title>Countdown | Ashvin Motye</title>
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+ 
+
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112790540-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112790540-1');
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="inputs-container">
+
+      <div class="input">
+        <label for="category">category</label>
+        <select name="category" id="category">
+          <option value="all">all</option>
+        </select>
+      </div>
+
+      <div class="input">
+        <label for="sort">sort</label>
+        <select name="sort" id="sort">
+          <option value="0">ending soon</option>
+          <option value="1">ending last</option>
+        </select>
+      </div>
+
+      <div class="input">
+        <label for="show">show</label>
+        <select name="show" id="show">
+        <option value="pending">pending</option>
+          <option value="all">all</option>
+          <option value="completed">completed</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="tasks-container"></div>
+
+  </div>
+
+  <script src="tasks.js"></script>
+  <script src="main.js"></script>
+  <script src="choose.js"></script>
+</body>
+</html>
