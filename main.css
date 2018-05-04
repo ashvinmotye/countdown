@@ -43,6 +43,7 @@ body {
   border-radius: 5px;
   position: relative;
   z-index: -2;
+  overflow: hidden;
 }
 
 .task.complete {
